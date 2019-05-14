@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def cart 
-    return session[:cart]
+    cart = session[:cart] || []
+    return cart
   end
 
   def add_to_cart
