@@ -1,3 +1,6 @@
 <%= form_tag("/", method: "post") do %>
-    <%= text_field_tag"product" %>
+  <%= label_tag(product, "Enter Product") %>
+  <%= text_field_tag(product) %>
+
+  <%= submit_tag("Add to Cart") %>
 <% end %>
