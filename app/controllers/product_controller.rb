@@ -1,8 +1,8 @@
 class ProductController < ApplicationController
   def index
-  end 
+  end
 
-  def add 
+  def add
     cart << params[:product]
   end
 end
